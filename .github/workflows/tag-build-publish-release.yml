@@ -13,15 +13,6 @@ jobs:
       - name: Checkout GitHub project
         uses: actions/checkout@v2
 
-      - name: Bump Version and Push Tag
-        id: bump-and-tag
-        uses: anothrNick/github-tag-action@1.26.0
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          RELEASE_BRANCHES: master
-          # Add #major, #minor or #patch to commit message to change default bump
-          DEFAULT_BUMP: patch
-
       - name: Set up AdoptOpenJDK 11
         uses: joschi/setup-jdk@v2
         with:

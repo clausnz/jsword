@@ -185,4 +185,13 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub clausnz Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/clausnz/jsword</url>
+        </repository>
+    </distributionManagement>
+
 </project>
